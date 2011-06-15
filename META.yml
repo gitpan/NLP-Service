@@ -1,6 +1,6 @@
 ---
 name: NLP-Service
-version: 0.01
+version: 0.02
 author:
   - 'Vikas Naresh Kumar <vikas@cpan.org>'
 abstract: A RESTful NLP Service
@@ -13,6 +13,7 @@ build_requires:
   Test::Moose: 0
   Test::More: 0
   URI::Escape: 0
+  YAML: 0
 requires:
   Carp: 0
   Dancer: 1.3051
@@ -30,10 +31,10 @@ configure_requires:
 provides:
   NLP::Service:
     file: lib/NLP/Service.pm
-    version: 0.01
+    version: 0.02
   NLP::StanfordParser:
     file: lib/NLP/StanfordParser.pm
-    version: 0.01
+    version: 0.02
 generated_by: Module::Build version 0.340201
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
